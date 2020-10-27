@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var totalFee = 0;
+        function calculateFee() {
+            var returnType = prompt("What type of return is it? '0' for book '1' for dvd");
+            var late = prompt("How long was the book late?");
+            if(returnType==0) {
+                totalFee = totalFee + 0.25 * late;
+            }
+            else {
+                totalFee = totalFee + 0.50 * late;
+            }
+        }
+        function showFee() {
+            alert("Your total fee is: $" + totalFee);
+        }
+    </script>
+    <button onClick="calculateFee()">Add book/dvd</button>
+    <button onClick="showFee()">Show current total</button>
+</body>
+</html>
