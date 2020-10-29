@@ -5,7 +5,11 @@
     <title>Title</title>
 </head>
 <body>
-    <script>
+    <label>What type of return is it? '0' for book '1' for dvd</label>
+    <input id="returntype" type="number"><br>
+    <label>How late is the item?</label>
+    <input id="late" type="number"><br>
+    <!--<script>
         var totalFee = 0;
         function calculateFee() {
             var returnType = prompt("What type of return is it? '0' for book '1' for dvd");
@@ -20,8 +24,13 @@
         function showFee() {
             alert("Your total fee is: $" + totalFee);
         }
-    </script>
-    <button onClick="calculateFee()">Add book/dvd</button>
-    <button onClick="showFee()">Show current total</button>
+    </script>-->
+    <button id="calculateFee">Add book/dvd</button>
+    <button id="showFee">Show current total</button>
+    <p class="output">
+        Your current return cost is: $<span id="lateTotal"></span>
+    </p>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="stuff.js"></script>
 </body>
 </html>
